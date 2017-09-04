@@ -4,24 +4,54 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "79693455B0B4B7ED227103BF42FA5737CB4768C0" : 9223372036854775807,
     "DCD994A20FFF69E73D7DE28EB512BBF004934554" : 9223372036854775807,
-    "C4127C9B9C8FDF608B532AD72407863CE2797629" : 9223372036854775807
+    "9197B75B1BC29921D6E3B1CCDC2B258350009F3A" : 9223372036854775807,
+    "B123C9ACF68A2BF01173B652DA8ABD73F990D1DE" : 9223372036854775807,
+    "79693455B0B4B7ED227103BF42FA5737CB4768C0" : 9223372036854775807,
+    "E2306DAE0C98D148736A05084B6FAB44F03B4909" : 9223372036854775807,
+    "C4127C9B9C8FDF608B532AD72407863CE2797629" : 9223372036854775807,
+    "615FD99B652E80AC2E813EEEE7964BA10A9886D5" : 9223372036854775807,
+    "6F1260245BD69EFA9A05D126763C86280510C6E1" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "77D787E3-81C6-458E-AA70-24A49AA0BC2F",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "79693455B0B4B7ED227103BF42FA5737CB4768C0" : "reach\/",
     "DCD994A20FFF69E73D7DE28EB512BBF004934554" : "PerfectDB\/.build\/checkouts\/Perfect-COpenSSL.git--4744624199947727386\/",
-    "C4127C9B9C8FDF608B532AD72407863CE2797629" : "PerfectDB\/.build\/checkouts\/Perfect-HTTPServer.git--6671958091389663080\/"
+    "9197B75B1BC29921D6E3B1CCDC2B258350009F3A" : "reach\/.build\/checkouts\/Perfect-HTTP.git--6392294032632002019\/",
+    "B123C9ACF68A2BF01173B652DA8ABD73F990D1DE" : "reach\/.build\/checkouts\/Perfect-MySQL.git-4976130768219902098\/",
+    "79693455B0B4B7ED227103BF42FA5737CB4768C0" : "reach\/",
+    "E2306DAE0C98D148736A05084B6FAB44F03B4909" : "reach\/.build\/checkouts\/PerfectLib.git-3712999737848873669\/",
+    "C4127C9B9C8FDF608B532AD72407863CE2797629" : "reach\/.build\/checkouts\/Perfect-HTTPServer.git--6671958091389663080\/",
+    "615FD99B652E80AC2E813EEEE7964BA10A9886D5" : "reach\/.build\/checkouts\/Perfect-Thread.git-6541237758607105655\/",
+    "6F1260245BD69EFA9A05D126763C86280510C6E1" : "reach\/.build\/checkouts\/Perfect-Net.git-3268755499654502659\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "PerfectDB",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PerfectDB.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/zhanggeyi1\/work\/Perfect\/reach\/.build\/repositories\/Perfect-Thread.git-6541237758607105655",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "615FD99B652E80AC2E813EEEE7964BA10A9886D5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/zhanggeyi1\/work\/Perfect\/reach\/.build\/repositories\/Perfect-Net.git-3268755499654502659",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F1260245BD69EFA9A05D126763C86280510C6E1"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhanggeyi\/reach.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "79693455B0B4B7ED227103BF42FA5737CB4768C0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/zhanggeyi1\/work\/Perfect\/reach\/.build\/repositories\/Perfect-HTTP.git--6392294032632002019",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9197B75B1BC29921D6E3B1CCDC2B258350009F3A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/zhanggeyi1\/work\/Perfect\/reach\/.build\/repositories\/Perfect-MySQL.git-4976130768219902098",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B123C9ACF68A2BF01173B652DA8ABD73F990D1DE"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/zhanggeyi1\/work\/Perfect\/PerfectDB\/.build\/repositories\/Perfect-HTTPServer.git--6671958091389663080",
@@ -32,6 +62,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/zhanggeyi1\/work\/Perfect\/PerfectDB\/.build\/repositories\/Perfect-COpenSSL.git--4744624199947727386",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DCD994A20FFF69E73D7DE28EB512BBF004934554"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/zhanggeyi1\/work\/Perfect\/reach\/.build\/repositories\/PerfectLib.git-3712999737848873669",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2306DAE0C98D148736A05084B6FAB44F03B4909"
     }
   ]
 }

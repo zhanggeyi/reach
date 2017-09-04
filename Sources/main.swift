@@ -33,12 +33,12 @@ var routes = Routes()
 
 //MARK: - Note
 //根据用户名查询用户ID
-routes.add(method: .post, uri: "/queryUserInfoByUserName") { (request, response) in
-    guard let userName: String = request.param(name: "userName") else {
-        print("userName为nil")
-        return
-    }
-    guard let json = UserOperator().queryUserInfo(userName: userName) else {
+routes.add(method: .get, uri: "/queryUserInfoByUserName") { (request, response) in
+//    guard let userName: String = request.param(name: "userName") else {
+//        print("userName为nil")
+//        return
+//    }
+    guard let json = UserOperator().queryUserInfo(userName: "zhanggeyi") else {
         print("josn为nil")
         return
     }
@@ -406,7 +406,7 @@ server.setResponseFilters([(Filter404(), .high)])
 //LogFile.debug("调试")
 //LogFile.info("消息")
 //LogFile.warning("警告")
-print("出错")
+//print("出错")
 //LogFile.critical("严重错误")
 //LogFile.terminal("服务器终止")
 
