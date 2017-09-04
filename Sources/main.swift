@@ -20,7 +20,7 @@
 import PerfectLib
 import PerfectHTTP
 import PerfectHTTPServer
-import PerfectRequestLogger
+//import PerfectRequestLogger
 //import PerfectLogger
 import MySQL
 
@@ -400,8 +400,8 @@ server.setResponseFilters([(Filter404(), .high)])
 //MARK: - 添加日志文件记录
 //LogFile.location = "./files/logs/myLog.log"     //设置日志文件路径
 // 增加日志过滤器，将日志写入相应的文件
-server.setRequestFilters([(RequestLogger(), .high)])    // 首先增加高优先级的过滤器
-server.setResponseFilters([(RequestLogger(), .low)])    // 最后增加低优先级的过滤器
+//server.setRequestFilters([(RequestLogger(), .high)])    // 首先增加高优先级的过滤器
+//erver.setResponseFilters([(RequestLogger(), .low)])    // 最后增加低优先级的过滤器
 
 //LogFile.debug("调试")
 //LogFile.info("消息")
