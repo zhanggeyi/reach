@@ -44,7 +44,7 @@ class UserOperator: BaseOperator {
         if !mysql.query(statement: statement) {
             self.responseJson[ResultKey] = RequestResultFaile
             self.responseJson[ErrorMessageKey] = "查询失败"
-            //LogFile.error("\(statement)查询失败")
+            print("\(statement)查询失败")
         } else {
             //LogFile.info("SQL:\(statement)查询成功")
             
@@ -83,7 +83,7 @@ class UserOperator: BaseOperator {
         if !mysql.query(statement: statement) {
             self.responseJson[ResultKey] = RequestResultFaile
             self.responseJson[ErrorMessageKey] = "查询失败"
-            //LogFile.error("\(statement)查询失败")
+            print("\(statement)查询失败")
         } else {
             //LogFile.info("SQL:\(statement)查询成功")
             
@@ -94,7 +94,7 @@ class UserOperator: BaseOperator {
             if results.numRows() == 0 {
                 self.responseJson[ResultKey] = RequestResultFaile
                 self.responseJson[ErrorMessageKey] = "用户名或密码错误，请重新输入！"
-                //LogFile.error("\(statement)用户名或密码错误，请重新输入")
+                print("\(statement)用户名或密码错误，请重新输入")
             } else {
                 results.forEachRow { row in
                     guard let userId = row.first! else {//保存选项表的Name名称字段，应该是所在行的第一列，所以是row[0].
@@ -129,7 +129,7 @@ class UserOperator: BaseOperator {
         //LogFile.info("执行SQL:\(statement)")
         
         if !mysql.query(statement: statement) {
-            //LogFile.error("\(statement)插入失败")
+            print("\(statement)插入失败")
             self.responseJson[ResultKey] = RequestResultFaile
             self.responseJson[ErrorMessageKey] = "创建\(userName)失败"
             guard let josn = try? responseJson.jsonEncodedString() else {
@@ -164,7 +164,7 @@ class ContentOperator: BaseOperator {
         //LogFile.info("执行SQL:\(statement)")
         
         if !mysql.query(statement: statement) {
-            //LogFile.error("\(statement)插入失败")
+            print("\(statement)插入失败")
             self.responseJson[ResultKey] = RequestResultFaile
             self.responseJson[ErrorMessageKey] = "创建\(title)失败"
         } else {
@@ -190,7 +190,7 @@ class ContentOperator: BaseOperator {
         if !mysql.query(statement: statement) {
             self.responseJson[ResultKey] = RequestResultFaile
             self.responseJson[ErrorMessageKey] = "查询失败"
-            //LogFile.error("\(statement)查询失败")
+            print("\(statement)查询失败")
         } else {
             //LogFile.info("SQL:\(statement)查询成功")
             
@@ -231,7 +231,7 @@ class ContentOperator: BaseOperator {
         if !mysql.query(statement: statement) {
             self.responseJson[ResultKey] = RequestResultFaile
             self.responseJson[ErrorMessageKey] = "查询失败"
-            //LogFile.error("\(statement)查询失败")
+            print("\(statement)查询失败")
         } else {
             //LogFile.info("SQL:\(statement)查询成功")
             
@@ -242,7 +242,7 @@ class ContentOperator: BaseOperator {
             if results.numRows() == 0 {
                 self.responseJson[ResultKey] = RequestResultFaile
                 self.responseJson[ErrorMessageKey] = "获取Note详情失败！"
-                //LogFile.error("\(statement)获取Note详情失败！")
+                print("\(statement)获取Note详情失败！")
             } else {
                 results.forEachRow { row in
                     guard let content = row.first! else {
@@ -277,7 +277,7 @@ class ContentOperator: BaseOperator {
         if !mysql.query(statement: statement) {
             self.responseJson[ResultKey] = RequestResultFaile
             self.responseJson[ErrorMessageKey] = "更新失败"
-            //LogFile.error("\(statement)更新失败")
+            print("\(statement)更新失败")
         } else {
             //LogFile.info("SQL:\(statement) 更新成功")
             self.responseJson[ResultKey] = RequestResultSuccess
@@ -301,7 +301,7 @@ class ContentOperator: BaseOperator {
         if !mysql.query(statement: statement) {
             self.responseJson[ResultKey] = RequestResultFaile
             self.responseJson[ErrorMessageKey] = "删除失败"
-            //LogFile.error("\(statement)删除失败")
+            print("\(statement)删除失败")
         } else {
             //LogFile.info("SQL:\(statement) 删除成功")
             self.responseJson[ResultKey] = RequestResultSuccess

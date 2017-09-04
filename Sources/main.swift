@@ -35,11 +35,11 @@ var routes = Routes()
 //根据用户名查询用户ID
 routes.add(method: .post, uri: "/queryUserInfoByUserName") { (request, response) in
     guard let userName: String = request.param(name: "userName") else {
-        //LogFile.error("userName为nil")
+        print("userName为nil")
         return
     }
     guard let json = UserOperator().queryUserInfo(userName: userName) else {
-        //LogFile.error("josn为nil")
+        print("josn为nil")
         return
     }
     //LogFile.info(json)
@@ -50,16 +50,16 @@ routes.add(method: .post, uri: "/queryUserInfoByUserName") { (request, response)
 //注册
 routes.add(method: .post, uri: "/register") { (request, response) in
     guard let userName: String = request.param(name: "userName") else {
-        //LogFile.error("userName为nil")
+        print("userName为nil")
         return
     }
     
     guard let password: String = request.param(name: "password") else {
-        //LogFile.error("password为nil")
+        print("password为nil")
         return
     }
     guard let json = UserOperator().insertUserInfo(userName: userName, password: password) else {
-        //LogFile.error("josn为nil")
+        print("josn为nil")
         return
     }
     //LogFile.info(json)
@@ -70,15 +70,15 @@ routes.add(method: .post, uri: "/register") { (request, response) in
 //登录
 routes.add(method: .post, uri: "/login") { (request, response) in
     guard let userName: String = request.param(name: "userName") else {
-        //LogFile.error("userName为nil")
+        print("userName为nil")
         return
     }
     guard let password: String = request.param(name: "password") else {
-        //LogFile.error("password为nil")
+        print("password为nil")
         return
     }
     guard let json = UserOperator().queryUserInfo (userName: userName, password: password) else {
-        //LogFile.error("josn为nil")
+        print("josn为nil")
         return
     }
     //LogFile.info(json)
@@ -89,12 +89,12 @@ routes.add(method: .post, uri: "/login") { (request, response) in
 //获取内容列表
 routes.add(method: .post, uri: "/contentList") { (request, response) in
     guard let userId: String = request.param(name: "userId") else {
-        //LogFile.error("userId为nil")
+        print("userId为nil")
         return
     }
     
     guard let json = ContentOperator().queryContentList(userId: userId) else {
-        //LogFile.error("josn为nil")
+        print("josn为nil")
         return
     }
     //LogFile.info(json)
@@ -105,11 +105,11 @@ routes.add(method: .post, uri: "/contentList") { (request, response) in
 //获取详情
 routes.add(method: .post, uri: "/contentDetail") { (request, response) in
     guard let contentId: String = request.param(name: "contentId") else {
-        //LogFile.error("contentId为nil")
+        print("contentId为nil")
         return
     }
     guard let json = ContentOperator().queryContentDetail(contentId: contentId) else {
-        //LogFile.error("josn为nil")
+        print("josn为nil")
         return
     }
     //LogFile.info(json)
@@ -120,22 +120,22 @@ routes.add(method: .post, uri: "/contentDetail") { (request, response) in
 //添加内容
 routes.add(method: .post, uri: "/contentAdd") { (request, response) in
     guard let userId: String = request.param(name: "userId") else {
-        //LogFile.error("userId为nil")
+        print("userId为nil")
         return
     }
     
     guard let title: String = request.param(name: "title") else {
-        //LogFile.error("title为nil")
+        print("title为nil")
         return
     }
     
     guard let content: String = request.param(name: "content") else {
-        //LogFile.error("content为nil")
+        print("content为nil")
         return
     }
     
     guard let json = ContentOperator().addContent(userId: userId, title: title, content: content) else {
-        //LogFile.error("josn为nil")
+        print("josn为nil")
         return
     }
     //LogFile.info(json)
@@ -146,22 +146,22 @@ routes.add(method: .post, uri: "/contentAdd") { (request, response) in
 //更新内容
 routes.add(method: .post, uri: "/contentUpdate") { (request, response) in
     guard let contentId: String = request.param(name: "contentId") else {
-        //LogFile.error("contentId为nil")
+        print("contentId为nil")
         return
     }
     
     guard let title: String = request.param(name: "title") else {
-        //LogFile.error("title为nil")
+        print("title为nil")
         return
     }
     
     guard let content: String = request.param(name: "content") else {
-        //LogFile.error("content为nil")
+        print("content为nil")
         return
     }
     
     guard let json = ContentOperator().updateContent(contentId: contentId, title: title, content: content) else {
-        //LogFile.error("josn为nil")
+        print("josn为nil")
         return
     }
     //LogFile.info(json)
@@ -172,12 +172,12 @@ routes.add(method: .post, uri: "/contentUpdate") { (request, response) in
 //删除内容
 routes.add(method: .post, uri: "/contentDelete") { (request, response) in
     guard let contentId: String = request.param(name: "contentId") else {
-        //LogFile.error("contentId为nil")
+        print("contentId为nil")
         return
     }
     
     guard let json = ContentOperator().deleteContent(contentId: contentId) else {
-        //LogFile.error("josn为nil")
+        print("josn为nil")
         return
     }
     //LogFile.info(json)
@@ -406,7 +406,7 @@ server.setResponseFilters([(Filter404(), .high)])
 //LogFile.debug("调试")
 //LogFile.info("消息")
 //LogFile.warning("警告")
-//LogFile.error("出错")
+print("出错")
 //LogFile.critical("严重错误")
 //LogFile.terminal("服务器终止")
 
